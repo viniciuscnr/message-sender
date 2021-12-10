@@ -1,5 +1,6 @@
 import { NestFactory } from '@nestjs/core';
-import { SenderModule } from './sender/sender.module';
+import { SenderModule } from './sender.module';
+import 'isomorphic-fetch';
 
 async function bootstrap() {
   const app = await NestFactory.create(SenderModule);
